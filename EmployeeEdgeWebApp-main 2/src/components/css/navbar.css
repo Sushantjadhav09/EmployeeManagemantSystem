@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Space between logo and links */
+  align-items: center;
+  /* Align items vertically in the center */
+  background-color: #1e2a38;
+  /* Professional dark blue */
+  padding: 10px 20px;
+  height: 80px;
+  /* Increased height for the navbar */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  /* Align logo and title vertically */
+}
+
+.logo a {
+  color: #ffffff;
+  /* White for logo */
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  /* Space between logo and dashboard title */
+}
+
+/* Dashboard Title Styling */
+.dashboard-title {
+  color: #d1d5db;
+  /* Light gray for dashboard title */
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* Ensure vertical alignment of links */
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 5px;
+}
+
+.nav-links a {
+  color: #d1d5db;
+  /* Light gray for links */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4f8fc0;
+  /* Light blue accent for hover effect */
+}
+
+/* Login Button Styling */
+.login-btn {
+  background-color: #4caf50;
+  /* Green for Login button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  background-color: #f04343;
+  /* Red for Logout button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d13232;
+  /* Darker red on hover */
+}
+
+.mobile-menu-icon {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  /* White for mobile menu icon */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}

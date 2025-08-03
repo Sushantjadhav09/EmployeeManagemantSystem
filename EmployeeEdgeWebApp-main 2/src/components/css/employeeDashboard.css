@@ -1,0 +1,241 @@
+/* General layout styling */
+.employee-details-page {
+  margin-top: 50px;
+  height: 80vh;
+  /* Full height to cover the viewport */
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f4f8;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #333333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Navigation styling */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab-navigation button {
+  flex: 1;
+  max-width: 250px;
+  padding: 12px 20px;
+  margin: 0 10px;
+  background-color: #007bff;
+  /* Modern blue */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.tab-navigation button.active {
+  background-color: #e53e3e;
+  /* Darker blue for active state */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  /* Subtle shadow */
+}
+
+.tab-navigation button:hover {
+  background-color: #c53030;
+  /* Darker on hover */
+  transform: translateY(-2px);
+}
+
+/* Content section styling */
+.details-section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  /* White background */
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  /* Modern shadow */
+  transition: all 0.3s;
+}
+
+.details-section h3 {
+  color: #007bff;
+  /* Blue heading for each section */
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.details-section p {
+  color: #555555;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Updated spacing for better readability */
+.details-section p {
+  margin: 10px 0;
+}
+
+.details-section p strong {
+  display: inline-block;
+  width: 200px;
+  /* Consistent label width for better alignment */
+}
+
+/* Fieldset styling */
+fieldset {
+  margin: 20px 0;
+  border: 1px solid #e2e8f0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+legend {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Download Payslips Button */
+.download-payslips {
+  float: right;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #333333, #000000);
+  /* Gradient black */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: auto;
+  /* Auto width */
+  max-width: 250px;
+  /* Maximum width constraint */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.download-payslips:hover {
+  background: linear-gradient(90deg, #1a1a1a, #000000);
+  /* Darker black on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.download-payslips:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.4);
+  /* Focus ring */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .tab-navigation {
+    flex-direction: column;
+  }
+
+  .tab-navigation button {
+    margin: 10px 0;
+  }
+
+  .details-section {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .tab-navigation button {
+    font-size: 14px;
+    /* Reduced button font-size for smaller screens */
+    padding: 10px;
+  }
+}
+
+/* Additional mobile-friendly spacing */
+@media (max-width: 480px) {
+  .details-section p strong {
+    width: 100%;
+    /* Full width on mobile for better stacking */
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+/* Key-Value Pair Styling */
+.key-value-pair {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+  /* Separator line */
+}
+
+.key-value-pair .key {
+  font-weight: bold;
+  color: #333333;
+  /* Dark color for key labels */
+  flex: 1;
+  /* Allow the key to take up more space */
+  margin-right: 20px;
+  /* Space between key and value */
+  text-align: left;
+}
+
+.key-value-pair .value {
+  color: #555555;
+  /* Slightly lighter color for values */
+  flex: 2;
+  /* Values take more space compared to keys */
+  text-align: right;
+}
+
+/* Adjusting project section */
+.project-section {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-section h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  /* Blue color for project headers */
+}
+
+/* Adjustments for responsive layout */
+@media (max-width: 768px) {
+  .key-value-pair {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .key-value-pair .value {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
